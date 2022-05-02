@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mini Projcet</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="wrapHead">
+      <div id="brand">
+        <h1>ML</h1>
+      </div>
+      <div id="brand">
+        <h3>roles</h3>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home" class="scroll">Home</a></li>
+          <li><a href="#about" class="scroll">Roles</a></li>
+          <li><a href="#about-us" class="scroll">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+      </ol>
+    </nav>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Roles</a></li>
+        <li class="breadcrumb-item active" aria-current="page">List</li>
+      </ol>
+    </nav>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <form class="d-flex">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn " type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <section id="home">
+
+    <div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="source/atas/img3.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="source/atas/img2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="source/atas/img1.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+  </section>
+  <section id="about">
+    <div>
+      <div class="card-list row">
+        <div class="card col-2">
+          <img src="source/Cardlist/img1.jpeg" class="img-card" alt="...">
+          <div class="card-body">
+            <h4>Support roles</h4>
+          </div>
+          <div class="card-button">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              About
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Support Role</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="img-about" src="source/about/img1.png">
+                    <p>The Support role is to aid and help protect your allies in any situation. Your role is is to
+                      shield
+                      or heal them, to tanking some damage, or sacrificing yourself to keep others alive. You are often
+                      giving up the glorious kills in the game to support others but in the end, it's usually the
+                      support
+                      to secure the true MVP award. Support heroes usually lane with the marksman in the top lane or at
+                      the mid lane to be able to travel quickly where they are needed.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <div id="liveAlertPlaceholder"></div>
+                    <button type="button" class="btn btn-primary" id="liveAlertBtn"> <svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-bookmark-plus" viewBox="0 0 16 16">
+                        <path
+                          d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                        <path
+                          d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+        <div class="card col-2">
+          <img src="source/Cardlist/img2.jpeg" class="img-card" alt="...">
+          <div class="card-body">
+            <h4>Marksman roles</h4>
+          </div>
+          <div class="card-button">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1">
+              About
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Marksman</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="source/about/img2.jpeg" alt="" class="img-about">
+                    <p>Marksman are ranged heroes whose power is almost entirely based on their basic attacks: by using
+                      their reach to land massive continuous damage from a distance, marksmens are capable of taking
+                      down
+                      even the most difficult opponents when positioned behind the safety of their team, and perform
+                      better at securing objectives such as the Lord and turrets.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <div id="liveAlertPlaceholder"></div>
+                    <button type="button" class="btn btn-primary" id="liveAlertBtn"> <svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-bookmark-plus" viewBox="0 0 16 16">
+                        <path
+                          d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                        <path
+                          d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+        <div class="card col-2">
+          <img src="source/Cardlist/img3.jpeg" class="img-card" alt="...">
+          <div class="card-body">
+            <h4>Fighter roles</h4>
+          </div>
+          <div class="card-button">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">
+              About
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">fighter</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="source/about/img3.jpeg" alt="" class="img-about">
+                    <p>
+                      Fighters are close range combatants that possess a mix of offensive and defensive capabilities.
+                      While they don't have as much utility as a tank or as much damage as an assassin, a fighter's
+                      damage
+                      will add up over time to make it a major threat. Each fighter has a unique blend of mobility,
+                      damage, disruption and durability. Fighter is an intermediate melee heroes, between Tank
+                      durability
+                      or Assassin damage, hence make fighter serve as multi purpose combatant, such as Semi Tank, Crowd
+                      Controller, or Tank and Assassin.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <div id="liveAlertPlaceholder"></div>
+                    <button type="button" class="btn btn-primary posisi" id="liveAlertBtn"> <svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-bookmark-plus" viewBox="0 0 16 16">
+                        <path
+                          d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                        <path
+                          d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+        <div class="card col-2">
+          <img src="source/Cardlist/img4.jpeg" class="img-card" alt="...">
+          <div class="card-body">
+            <h4>Assassin roles</h4>
+          </div>
+          <div class="card-button">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-4">
+              About
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Assassin</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="source/about/img4.jpeg" alt="" class="img-about">
+                    <p>
+                      An assassin is an agile hero that specializes in killing or disabling roaming targets picking them
+                      of as they try to replenish HP. Focused on infiltration, deception, and mobility, assassins are
+                      opportunistic hunters who find favorable moments within a fight before jumping into the fray.
+                      Regardless of the size of the enemy team, assassins specializes in positioning and artful killing.
+                      They strike when the time is right – no sooner, no later. Assassins are more suitable to be played
+                      by experienced players as they have low HP and high burst damage. They are ideal for taking out
+                      opponents easily, but are easier to be killed due to bad positioning and wrong timing.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <div id="liveAlertPlaceholder"></div>
+                    <button type="button" class="btn btn-primary posisi" id="liveAlertBtn"> <svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-bookmark-plus" viewBox="0 0 16 16">
+                        <path
+                          d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                        <path
+                          d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+        <div class="card col-2">
+          <img src="source/Cardlist/img5.jpeg" class="img-card" alt="...">
+          <div class="card-body">
+            <h4>Mage roles</h4>
+          </div>
+          <div class="card-button">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              About
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Mage</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="source/about/img5.jpeg" alt="" class="img-about">
+                    <p>
+                      A magician (abbreviated as mage) is a hero with a longer range, ability-based area of effect
+                      damage,
+                      and crowd control that they may utilize to strike from a distance. Mages primarily focus on magic
+                      skills that deals magic damage, usually burst damage, and as a consequence, they spend a lot of
+                      gold
+                      on equipment that allows them to do more damage and have shorter skill cooldowns.
+
+                      Though mages typically focus on killing prime targets in combat, they can also use their innate
+                      crowd control and utility to manipulate opponents, protecting their team from them or setting them
+                      up for a takedown, and in the right circumstances, can damage and control multiple enemies at the
+                      same time. Regardless of their might, mages are fundamentally frail and succumb fast to direct
+                      attacks.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <div id="liveAlertPlaceholder"></div>
+                    <button type="button" class="btn btn-primary posisi" id="liveAlertBtn"> <svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-bookmark-plus" viewBox="0 0 16 16">
+                        <path
+                          d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                        <path
+                          d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about-us">
+
+    <div>
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Success</strong> You now already new player on Mobile Legend.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+      <div>
+        <h3 style="text-align: center;">about us</h3>
+      </div>
+      <div>
+        <p>Mobile Legends has been on the rise for a while now. From its inception until today—Mobile Legends continues
+          to entertain different types of people. Yes, even students are getting hooked in this game. Indeed, it’s quite
+          appealing to try because of its graphics and anime-inspired mobile legends heroes. But apart from these, what
+          makes this game special?
+
+          Mobile Legends: Bang Bang is a mobile game developed by Shanghai Moonton Technology. Since its launch in 2004,
+          Mobile Legends has become one of the best multiplayer online battle arena (MOBA) mobile games in the
+          Philippines. Due to its popularity, more people are getting curious about this game. According to Prioridata,
+          Mobile Legends surpassed a total of 31.60 million downloads in the Philippines last 2017 alone. In fact,
+          Newzoo said that the Philippines, with total revenue of $461M in 2018, ranked 29th in terms of game market
+          revenues worldwide.
+
+          In addition, Mobile Legends: Bang Bang is the first e-sport to be included in the 2019 Southeast Asian (SEA)
+          Games. Given this much fame, Mobile Legends is indeed one of the most in-demand games of 2019.</p>
+      </div>
+      <div>
+        In this game, there are various roles. You can choose whether you’ll play a role as tank, fighter, assassin,
+        mage, marksman, and support. Moreover, these mobile legends heroes fall under each role. So, CIIT Philippines—a
+        top-rated mobile game development college—provides a mobile legends hero list to help you decide which hero you
+        should use in your game.
+      </div>
+    </div>
+  </section>
+  <footer>
+    <h4>Give feedback for this website ❤️</h4>
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="form-floating mb-3">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        <label for="floatingTextarea">Comments</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="function.js"></script>
+</body>
+
+</html>

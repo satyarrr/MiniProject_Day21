@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navbar {
+  margin-top: -5px;
+  height: 40px;
+  background-color: transparent;
+}
+
+.form-control {
+  background-color: transparent;
+  height: 40px;
+  color: white;
+}
+
+.wrapHead {
+  width: 90%;
+  margin: 0 auto;
+  transition: all ease-in-out 0.5s;
+}
+
+.wrapHead.fixed-to-top {
+  width: 96%;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background: rgba(38, 50, 56, 0.5);
+  padding: 10px 0;
+  z-index: 1;
+  transition: all ease-in-out 0.5s;
+}
+
+header:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header.fixed-to-top {
+  background: rgba(38, 50, 56, 1);
+}
+
+#brand {
+  color: white;
+  float: left;
+}
+
+#brand h1 {
+  letter-spacing: 10px;
+}
+
+nav {
+  float: right;
+  margin-top: 20px;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+nav li a {
+  padding: 10px 0;
+  text-decoration: none;
+  color: #e1e1e1;
+  transition: all ease-in-out 0.5s;
+}
+
+nav li a:hover {
+  color: #bbb;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
+
+section div h3 {
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+#home {
+  background-color: black;
+}
+
+#about {
+  background-image: radial-gradient(circle, #b5ffff, #76bfd5, #4d80a5, #36446e, #220c31);
+  height: 700px;
+}
+
+#about-us {
+  padding: 15px;
+  text-align: justify;
+  background-color: #220C31;
+  color: rgba(225, 225, 225, 0.9);
+}
+
+footer {
+  color: rgba(225, 225, 225, 0.9);
+
+  padding: 20px;
+  background-image: linear-gradient(to top, #6eb3b3, #40899d, #285e81, #26355d, #220c31);
+}
+
+/*home  */
+#carouselExampleIndicators {
+  margin-top: 77px;
+}
+
+
+/* card */
+
+.card-list {
+  margin-left: 20px;
+  margin-top: 17%;
+}
+
+.card {
+  height: 350px;
+  margin: 20px;
+  border-radius: 6%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.card-body {
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: -10px;
+}
+
+.card-button {
+  display: flex;
+  justify-content: start;
+}
+
+.img-card {
+  border-radius: 6%;
+  margin-top: 10px;
+}
+
+.img-about {
+  width: 480px;
+}
+
+.btn {
+  width: 150px;
+  height: 45px;
+  border-radius: 45px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+  letter-spacing: 2px;
+  font-weight: bold;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  border: none;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+  background: #2ceae5;
+  transform: translateY(-7px);
+  color: #fff;
+  box-shadow: 0px 10px 25px rgba(46, 225, 229, 0.445);
+}
+
+/* responsive */
+@media screen and (max-width: 576px) {
+  .card {
+    height: 250px;
+    margin: 10px;
+
+  }
+
+  .col-2 {
+    width: 25%;
+  }
+
+  .card-list {
+    margin-left: 100px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  #home {
+    height: 380px;
+  }
+
+  .navbar,
+  .breadcrumb {
+    display: none;
+  }
+}
